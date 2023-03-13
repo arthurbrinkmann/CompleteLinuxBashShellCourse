@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author: ArthurB
+# Date:03/08/2023
+# Description: This script will ask to dd or delete from database file
+# Modified: 03/08/2023
+
+clear
+
+echo Please select one of the following options:
+echo
+echo 'a = Add a record'
+echo 'd = Delete a record'
+echo 
+	read choice 
+	case $choice in 
+
+a)	/home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/add-record;;
+d)	/home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/del-record;;
+*) 	echo Invalid choice - Bye.
+
+	esac

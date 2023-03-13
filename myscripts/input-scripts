@@ -1,0 +1,20 @@
+#!/bin/bash
+# Author
+# Date
+# Desc
+#
+a=`hostname`
+echo Hello, my server name is $a
+echo
+echo What is your name? 
+read b
+echo
+echo How did your exam go?
+read c
+echo you are smart no matter what
+echo
+echo You did good no matter what, would you like to find truman and wrigley?
+read d
+echo woohoo
+echo 
+

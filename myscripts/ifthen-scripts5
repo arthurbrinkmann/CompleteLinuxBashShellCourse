@@ -1,0 +1,25 @@
+#1/bin/bash
+
+clear
+echo
+echo 'Hi, what is your name?'
+echo
+read a
+echo
+
+echo Hello $a
+echo
+
+echo "Do you like puppies? (y/n)"
+read Like 
+echo
+
+if [ "$Like" == y ]
+then 
+echo good choice 
+
+elif [ "$Like" == n ]
+then
+echo why are you a cat person.
+echo
+fi

@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: ArthurB
+# Date:03/08/2023
+# Description: This script will delete system from inventory database file
+# Modified: 03/08/2023
+
+clear
+echo Please enter hostname or IP addresss?
+read hostip 
+echo 
+	grep -1 $hostip /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/database
+	if [ $? -eq 0 ] 
+	then
+	echo
+	sed -i '/'$hostip'/d' /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/database
+	echo $hostip has been deleted
+	else
+	echo Record $hostip does not exist
+	fi 

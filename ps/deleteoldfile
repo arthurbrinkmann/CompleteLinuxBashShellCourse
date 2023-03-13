@@ -1,0 +1,7 @@
+# !/bin/bash
+# Author: ArthurB
+# Date: 03/01/23
+# Description: This script will delete files older than 90 days.
+# Modified: 03/01/2023
+
+find /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps -mtime +90 -exec rm {} \;

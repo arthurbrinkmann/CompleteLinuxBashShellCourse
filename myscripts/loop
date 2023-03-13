@@ -1,0 +1,8 @@
+#!/bin/bash
+# this script will output Arthur with different actions 
+
+for i in eat run jump play
+do
+echo See Imran $i
+done
+

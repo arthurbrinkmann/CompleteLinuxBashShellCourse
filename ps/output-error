@@ -1,0 +1,1 @@
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.850112] EXT4-fs (sdc): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered. Quota mode: none.

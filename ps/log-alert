@@ -1,0 +1,14 @@
+# !/bin/bash
+# Author: ArthurB
+#Date: 03/05/2023
+# Description: This script will send an email to administrator
+#Modified:
+
+IT="arthurB@rgi-corp.com" 
+
+if [ -s /tmp/filtered-messages ]
+	then
+	cat /tmp/filtered-messages | sort | uniq | mail -s "syslog message" $IT
+	rm /tmp/filtered-messages
+	else
+	fi 

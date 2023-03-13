@@ -1,0 +1,12 @@
+# !/bin/bash
+# Author: ArthurB
+# Date: 03/01/2023
+# Description:
+# Modified: 
+
+for i in {1..10}
+do
+	touch arthurb.$i
+done
+
+ 

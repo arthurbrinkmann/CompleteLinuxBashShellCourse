@@ -1,0 +1,16 @@
+echo "#admin-commands" >> admin-commands.txt
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:arthurbrinkmann/ps.git
+git push -u origin main# !/bin/bash
+# Author: Arthur Brinkmann
+# Date: 02/28/2023
+# Description: Format the output of admin commands
+# Modified: 02/28/2023
+
+date | awk '{print $1}'
+uptime | awk '{print $3}'
+df -h | grep root
+

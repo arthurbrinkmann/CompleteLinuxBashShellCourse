@@ -1,0 +1,11 @@
+# !/bin/bash
+# Author: ArthurB
+# Date 03/01/2023
+# Description: This script will copy file names to remote hosts
+# Modified  03/01/2023
+
+a='cat /home/arthurbrinkmann/abc'
+For i in $a
+do 
+	scp somefile $i:/tmp
+done

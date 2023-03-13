@@ -1,0 +1,23 @@
+#!/bin/bash
+#Author:ArthurB
+#Date: 03/01/2023
+#Description: This script will check for files 
+#Modified: 03/01/2023
+
+Files="etc/passwd
+/etc/group
+/etc/shadow
+/etc/nsswitch.conf
+/etc/sshd_ssh_config
+/etc/fake"
+
+echo
+for file in $FILES
+do 
+	if [ ! -e $file ] 
+	then
+	echo $file do not exist
+	echo 
+	fi
+done
+

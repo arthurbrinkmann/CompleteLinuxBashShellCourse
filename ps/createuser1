@@ -1,0 +1,12 @@
+# !/bin/bash
+# Author: Arthur Brinkman
+# Date: 03/05/2023
+# Description: This script will create a user account 
+# Modified: 03/05/2023
+
+echo "Please provide a username?"
+read u
+echoi
+
+useradd $u
+echo $u account has been created

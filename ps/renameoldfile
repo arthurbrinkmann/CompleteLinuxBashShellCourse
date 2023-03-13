@@ -1,0 +1,6 @@
+# !/bin/bash
+# Author: ArthurB
+# Date: 03/01.2023
+# Description: This script will rename files olver than 90 days
+
+find /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps -mtime +90 -exec mv {} {}.old \;

@@ -1,0 +1,21 @@
+echo "# checkdiskspace" >> Checkdiskspace.txt
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:arthurbrinkmann/ps.git
+git push -u origin main# !/bin/bash
+# Author: ArthurB
+# Daate: 03/06/2023
+# Description: this script will check for disk space
+# Modified: 
+
+a=`df -h | egrep -v "tmpfs" | tail -n+2 | awk '{print $5}' | cut -d'%' -f1`
+
+for i in $a
+do
+	if [ $i -ge 10 ]
+	then
+	echo Check disk space $i `df -h | grep $i`
+	fi
+done

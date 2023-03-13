@@ -1,0 +1,9 @@
+#!/bin/bash
+###########################################
+#Author:  arthurb
+#Date:  Wed Mar 8 10:25:44 CST 2023
+#Description:  print hello world
+#Modified:  Wed Mar 8 10:25:44 CST 2023
+###########################################
+
+echo hello world

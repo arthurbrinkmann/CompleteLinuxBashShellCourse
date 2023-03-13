@@ -1,0 +1,49 @@
+echo "# add-record" >> add-record
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:arthurbrinkmann/ps.git
+git push -u origin main
+i#!/bin/bash
+# Author: ArthurB
+# Date:03/08/2023
+# Description: This script will add system inventory to database file
+# Modified: 03/08/2023
+
+clear
+echo Please enter hostname?
+read host
+echo
+	grep -q $host /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/database
+        if [ $? -eq 0 ] 
+	then
+	echo ERROR -- Hostname $host already exist
+	echo
+	exit
+	fi 
+
+echo Please enter IP address?
+read IP 
+echo
+	grep -q $IP /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/database
+	if [ $? -eq 0 ]
+	then 
+	echo ERROR -- IP $IP already exist
+	echo
+	exit 0
+	fi
+
+
+
+
+
+echo Please enter Description?
+read description
+echo 
+
+echo $host $IP $description >> /home/arthurbrinkmann/dev/CompleteLinuxBashShellCourse/ps/database
+echo The provided record has been added
+echo
+# add-record
+# add-record

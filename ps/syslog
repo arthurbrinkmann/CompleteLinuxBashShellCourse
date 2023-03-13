@@ -1,0 +1,649 @@
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Linux version 5.15.79.1-microsoft-standard-WSL2 (oe-user@oe-host) (x86_64-msft-linux-gcc (GCC) 9.3.0, GNU ld (GNU Binutils) 2.34.0.20200220) #1 SMP Wed Nov 23 01:01:46 UTC 2022
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=16 swiotlb=force console=hvc0 debug pty.legacy_count=0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] KERNEL supported cpus:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000]   Intel GenuineIntel
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000]   AMD AuthenticAMD
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000]   Centaur CentaurHauls
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'compacted' format.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] signal: max sigframe size: 1776
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-provided physical RAM map:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000e0fff] reserved
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000001fffff] ACPI data
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-e820: [mem 0x0000000000200000-0x00000000f7ffffff] usable
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000007ff5fffff] usable
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] NX (Execute Disable) protection: active
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] DMI not present or invalid.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hypervisor detected: Microsoft Hyper-V
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hyper-V: privilege flags low 0x2e7f, high 0x3b8030, hints 0x20c2c, misc 0x24bed7b6
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hyper-V Host Build:19041-10.0-2-0.2604
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hyper-V: Nested features: 0x0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hyper-V: LAPIC Timer Frequency: 0x1e8480
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] Hyper-V: Using hypercall for remote TLB flush
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000000] clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000001] tsc: Marking TSC unstable due to running on Hyper-V
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000003] tsc: Detected 2400.009 MHz processor
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000011] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000013] e820: remove [mem 0x000a0000-0x000fffff] usable
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000016] last_pfn = 0x7ff600 max_arch_pfn = 0x400000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000034] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000042] last_pfn = 0xf8000 max_arch_pfn = 0x400000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000049] Using GB pages for direct mapping
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000402] RAMDISK: [mem 0x03a35000-0x03c0efff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000404] ACPI: Early table checksum verification disabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000416] ACPI: RSDP 0x00000000000E0000 000024 (v02 VRTUAL)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000421] ACPI: XSDT 0x0000000000100000 000044 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000451] ACPI: FACP 0x0000000000101000 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000456] ACPI: DSDT 0x00000000001011B8 01E184 (v02 MSFTVM DSDT01   00000001 MSFT 05000000)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000458] ACPI: FACS 0x0000000000101114 000040
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000460] ACPI: OEM0 0x0000000000101154 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000463] ACPI: SRAT 0x000000000011F33C 000310 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000465] ACPI: APIC 0x000000000011F64C 0000C8 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000467] ACPI: Reserving FACP table memory at [mem 0x101000-0x101113]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000469] ACPI: Reserving DSDT table memory at [mem 0x1011b8-0x11f33b]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000470] ACPI: Reserving FACS table memory at [mem 0x101114-0x101153]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000470] ACPI: Reserving OEM0 table memory at [mem 0x101154-0x1011b7]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000471] ACPI: Reserving SRAT table memory at [mem 0x11f33c-0x11f64b]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000488] ACPI: Reserving APIC table memory at [mem 0x11f64c-0x11f713]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000681] Zone ranges:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000683]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000685]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000687]   Normal   [mem 0x0000000100000000-0x00000007ff5fffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000688]   Device   empty
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000689] Movable zone start for each node
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000689] Early memory node ranges
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000690]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000691]   node   0: [mem 0x0000000000200000-0x00000000f7ffffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000692]   node   0: [mem 0x0000000100000000-0x00000007ff5fffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000695] Initmem setup node 0 [mem 0x0000000000001000-0x00000007ff5fffff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000938] On node 0, zone DMA: 1 pages in unavailable ranges
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.000964] On node 0, zone DMA: 352 pages in unavailable ranges
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012323] On node 0, zone Normal: 2560 pages in unavailable ranges
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012360] ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012570] IOAPIC[0]: apic_id 16, version 17, address 0xfec00000, GSI 0-23
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012574] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012578] ACPI: Using ACPI (MADT) for SMP configuration information
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012582] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012589] [mem 0xf8000000-0xffffffff] available for PCI devices
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012590] Booting paravirtualized kernel on Hyper-V
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.012593] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017143] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:16 nr_node_ids:1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017668] percpu: Embedded 53 pages/cpu s177496 r8192 d31400 u262144
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017673] pcpu-alloc: s177496 r8192 d31400 u262144 alloc=1*2097152
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017675] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017689] Hyper-V: PV spinlocks enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017690] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017694] Built 1 zonelists, mobility grouping on.  Total pages: 8221741
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017695] Kernel command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=16 swiotlb=force console=hvc0 debug pty.legacy_count=0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.017763] Unknown kernel command line parameters "WSL_ROOT_INIT=1", will be passed to user space.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.021341] Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.023142] Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.023243] mem auto-init: stack:off, heap alloc:off, heap free:off
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.045714] Memory: 4081500K/33411708K available (18452K kernel code, 2627K rwdata, 9760K rodata, 2028K init, 1876K bss, 686748K reserved, 0K cma-reserved)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.045759] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.045766] ftrace: allocating 54585 entries in 214 pages
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.065911] ftrace: allocated 214 pages with 5 groups
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066162] rcu: Hierarchical RCU implementation.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066164] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=16.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066165] 	Rude variant of Tasks RCU enabled.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066166] 	Tracing variant of Tasks RCU enabled.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066166] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.066167] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.069720] Using NULL legacy PIC
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.069722] NR_IRQS: 16640, nr_irqs: 552, preallocated irqs: 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070000] random: crng init done
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070021] Console: colour dummy device 80x25
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070039] ACPI: Core revision 20210730
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070116] Failed to register legacy timer interrupt
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070117] APIC: Switch to symmetric I/O mode setup
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070118] Switched APIC routing to physical flat.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070130] Hyper-V: Using IPI hypercalls
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070131] Hyper-V: Using enlightened APIC (xapic mode)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070209] Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.01 BogoMIPS (lpj=24000090)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070212] pid_max: default: 32768 minimum: 301
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070226] LSM: Security Framework initializing
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070229] landlock: Up and running.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070277] Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070309] Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070530] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070533] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070538] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070540] Spectre V2 : Mitigation: Enhanced IBRS
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070540] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070541] Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070542] RETBleed: Mitigation: Enhanced IBRS
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070543] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070544] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070548] TAA: Mitigation: TSX disabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070549] MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.070550] SRBDS: Unknown: Dependent on hypervisor status
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] Freeing SMP alternatives memory: 60K
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] smpboot: CPU0: Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz (family: 0x6, model: 0x9e, stepping: 0xd)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] Performance Events: Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... version:                4
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... bit width:              48
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... generic registers:      4
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... value mask:             0000ffffffffffff
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... max period:             00007fffffffffff
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... fixed-purpose events:   3
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] ... event mask:             000000070000000f
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] rcu: Hierarchical SRCU implementation.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] smp: Bringing up secondary CPUs ...
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] x86: Booting SMP configuration:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] .... node  #0, CPUs:        #1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207]   #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] smp: Brought up 1 node, 16 CPUs
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] smpboot: Max logical packages: 1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.080207] smpboot: Total of 16 processors activated (76800.28 BogoMIPS)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] node 0 deferred pages initialised in 30ms
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] devtmpfs: initialized
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] x86/mm: Memory block size: 128MB
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] thermal_sys: Registered thermal governor 'step_wise'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] cpuidle: using governor menu
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] ACPI: bus type PCI registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] PCI: Fatal: No config space access function found
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] Kprobes globally optimized
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.113673] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120416] raid6: skip pq benchmark and using algorithm avx2x4
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120419] raid6: using avx2x2 recovery algorithm
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120429] ACPI: Added _OSI(Module Device)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120430] ACPI: Added _OSI(Processor Device)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120431] ACPI: Added _OSI(3.0 _SCP Extensions)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120431] ACPI: Added _OSI(Processor Aggregator Device)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120432] ACPI: Added _OSI(Linux-Dell-Video)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120433] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.120434] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.123686] ACPI: 1 ACPI AML tables successfully acquired and loaded
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] ACPI: Interpreter enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] ACPI: PM: (supports S0 S5)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] ACPI: Using IOAPIC for interrupt routing
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] ACPI: Enabled 2 GPEs in block 00 to 0F
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] iommu: Default domain type: Translated 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] iommu: DMA domain TLB invalidation policy: lazy mode 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] SCSI subsystem initialized
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] ACPI: bus type USB registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] usbcore: registered new interface driver usbfs
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] usbcore: registered new interface driver hub
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] usbcore: registered new device driver usb
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] pps_core: LinuxPPS API ver. 1 registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.124360] PTP clock support registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130233] hv_vmbus: Vmbus version:5.2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130289] PCI: Using ACPI for IRQ routing
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130291] PCI: System does not support PCI
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130711] clocksource: Switched to clocksource hyperv_clocksource_tsc_page
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130653] hv_vmbus: Unknown GUID: c376c1c3-d276-48d2-90a9-c04748072c60
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130688] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.130698] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.139134] VFS: Disk quotas dquot_6.6.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.139143] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.139155] FS-Cache: Loaded
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.139171] pnp: PnP ACPI init
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.139305] pnp: PnP ACPI: found 1 devices
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.144820] NET: Registered PF_INET protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.145093] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146323] tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146343] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146346] TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146669] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146945] TCP: Hash tables configured (established 262144 bind 65536)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.146965] UDP hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147000] UDP-Lite hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147059] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147768] RPC: Registered named UNIX socket transport module.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147769] RPC: Registered udp transport module.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147770] RPC: Registered tcp transport module.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147771] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147773] PCI: CLS 0 bytes, default 64
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147788] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147789] software IO TLB: mapped [mem 0x00000000f4000000-0x00000000f8000000] (64MB)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147864] Trying to unpack rootfs image as initramfs...
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147874] kvm: no hardware support
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147875] has_svm: not amd or hygon
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.147876] kvm: no hardware support
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.149030] Freeing initrd memory: 1896K
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.151037] Initialise system trusted keyrings
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.151241] workingset: timestamp_bits=46 max_order=23 bucket_order=0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.151938] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152133] NFS: Registering the id_resolver key type
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152137] Key type id_resolver registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152138] Key type id_legacy registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152140] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152141] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.152142] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153005] Key type cifs.idmap registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153132] fuse: init (API version 7.34)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153307] SGI XFS with ACLs, security attributes, realtime, scrub, repair, quota, no debug enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153816] 9p: Installing v9fs 9p2000 file system support
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153823] FS-Cache: Netfs '9p' registered for caching
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153858] FS-Cache: Netfs 'ceph' registered for caching
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.153860] ceph: loaded (mds proto 32)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.159879] NET: Registered PF_ALG protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.159881] xor: automatically using best checksumming function   avx       
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.159883] Key type asymmetric registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.159884] Asymmetric key parser 'x509' registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.159900] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.267792] hv_vmbus: registering driver hv_pci
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.269013] hv_pci 939c2316-9db0-46a8-a1e8-e6d912f4346d: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.270373] hv_pci 939c2316-9db0-46a8-a1e8-e6d912f4346d: PCI host bridge to bus 9db0:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.270375] pci_bus 9db0:00: root bus resource [mem 0x9ffe00000-0x9ffe02fff window]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.270377] pci_bus 9db0:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.270950] pci 9db0:00:00.0: [1af4:1043] type 00 class 0x010000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.271907] pci 9db0:00:00.0: reg 0x10: [mem 0x9ffe00000-0x9ffe00fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.272564] pci 9db0:00:00.0: reg 0x18: [mem 0x9ffe01000-0x9ffe01fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.273092] pci 9db0:00:00.0: reg 0x20: [mem 0x9ffe02000-0x9ffe02fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.276200] pci_bus 9db0:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.276232] pci 9db0:00:00.0: BAR 0: assigned [mem 0x9ffe00000-0x9ffe00fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.276720] pci 9db0:00:00.0: BAR 2: assigned [mem 0x9ffe01000-0x9ffe01fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.277167] pci 9db0:00:00.0: BAR 4: assigned [mem 0x9ffe02000-0x9ffe02fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.278116] hv_pci 27c9b13e-f584-46b0-9c06-16e97f463df8: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.278992] hv_pci 27c9b13e-f584-46b0-9c06-16e97f463df8: PCI host bridge to bus f584:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.278995] pci_bus f584:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.279267] pci f584:00:00.0: [1414:008e] type 00 class 0x030200
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.282642] pci_bus f584:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.282745] ACPI: AC: AC Adapter [AC1] (on-line)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.283436] ACPI: battery: Slot [BAT1] (battery present)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.286001] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.312164] Non-volatile memory driver v1.3
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.312672] [drm] Initialized vgem 1.0.0 20120112 for vgem on minor 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.313432] printk: console [hvc0] enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.315607] brd: module loaded
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.316617] loop: module loaded
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.316811] hv_vmbus: registering driver hv_storvsc
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.317451] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.318495] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.319026] tun: Universal TUN/TAP device driver, 1.6
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.319362] PPP generic driver version 2.4.2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.319917] PPP BSD Compression module registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.320446] PPP Deflate Compression module registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.320735] PPP MPPE Compression module registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.320893] NET: Registered PF_PPPOX protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.321110] usbcore: registered new interface driver cdc_ether
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.321567] usbcore: registered new interface driver cdc_ncm
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.322083] usbcore: registered new interface driver r8153_ecm
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.322216] scsi host0: storvsc_host_t
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.322585] hv_vmbus: registering driver hv_netvsc
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.323892] VFIO - User Level meta-driver version: 0.3
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.324528] usbcore: registered new interface driver cdc_acm
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.325091] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.325736] usbcore: registered new interface driver ch341
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.326183] usbserial: USB Serial support registered for ch341-uart
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.326721] usbcore: registered new interface driver cp210x
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.326906] usbserial: USB Serial support registered for cp210x
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.327133] usbcore: registered new interface driver ftdi_sio
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.327362] usbserial: USB Serial support registered for FTDI USB Serial Device
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.327765] vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.328208] vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.328795] vhci_hcd: created sysfs vhci_hcd.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.329313] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.329774] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.330104] usb usb1: Product: USB/IP Virtual Host Controller
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.330448] usb usb1: Manufacturer: Linux 5.15.79.1-microsoft-standard-WSL2 vhci_hcd
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.330737] usb usb1: SerialNumber: vhci_hcd.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.331037] hub 1-0:1.0: USB hub found
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.331196] hub 1-0:1.0: 8 ports detected
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.331624] vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.331874] vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.332239] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.332663] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.15
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.332950] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.333335] usb usb2: Product: USB/IP Virtual Host Controller
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.333601] usb usb2: Manufacturer: Linux 5.15.79.1-microsoft-standard-WSL2 vhci_hcd
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.333895] usb usb2: SerialNumber: vhci_hcd.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.334205] hub 2-0:1.0: USB hub found
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.334389] hub 2-0:1.0: 8 ports detected
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.334791] hv_vmbus: registering driver hyperv_keyboard
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.335093] rtc_cmos 00:00: RTC can wake from S4
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.336464] rtc_cmos 00:00: registered as rtc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.336915] rtc_cmos 00:00: setting system clock to 2023-02-20T16:11:54 UTC (1676909514)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.337242] rtc_cmos 00:00: alarms up to one month, 114 bytes nvram
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.337771] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.338523] device-mapper: raid: Loading target version 1.15.1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.338954] usbcore: registered new interface driver usbhid
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.339149] usbhid: USB HID core driver
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.339324] hv_utils: Registering HyperV Utility Driver
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.339526] hv_vmbus: registering driver hv_utils
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.339734] hv_vmbus: registering driver hv_balloon
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.340145] hv_utils: TimeSync IC version 4.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.340417] hv_vmbus: registering driver dxgkrnl
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.340964] hv_balloon: Using Dynamic Memory protocol version 2.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.341683] drop_monitor: Initializing network drop monitor service
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.342105] Mirror/redirect action on
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.342528] Free page reporting enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.342512] u32 classifier
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.342792] hv_balloon: Cold memory discard hint enabled with order 9
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.342892]     Performance counters on
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.343973]     input device check on
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.344281]     Actions configured
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.345489] IPVS: Registered protocols (TCP, UDP)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.345998] IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.346509] IPVS: ipvs loaded.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.346652] IPVS: [rr] scheduler registered.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.346817] IPVS: [wrr] scheduler registered.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.346982] IPVS: [sh] scheduler registered.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.347179] ipip: IPv4 and MPLS over IPv4 tunneling driver
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.347409] ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.347619] Initializing XFRM netlink socket
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.347822] NET: Registered PF_INET6 protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.348467] Segment Routing with IPv6
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.348614] In-situ OAM (IOAM) with IPv6
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.348764] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.349035] NET: Registered PF_PACKET protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.349232] Bridge firewalling registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.349516] 8021q: 802.1Q VLAN Support v1.8
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.349752] sctp: Hash tables configured (bind 512/512)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.349974] 9pnet: Installing 9P2000 support
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.350370] Key type dns_resolver registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.350646] Key type ceph registered
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.350960] libceph: loaded (mon/osd proto 15/24)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.351440] NET: Registered PF_VSOCK protocol family
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.351778] hv_vmbus: registering driver hv_sock
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.352382] IPI shorthand broadcast: enabled
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.352742] sched_clock: Marking stable (351200300, 228100)->(370767700, -19339300)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.353855] registered taskstats version 1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.355476] Loading compiled-in X.509 certificates
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.357000] Btrfs loaded, crc32c=crc32c-generic, zoned=no, fsverity=no
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.358418] Freeing unused kernel image (initmem) memory: 2028K
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.430356] Write protecting the kernel read-only data: 30720k
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.432312] Freeing unused kernel image (text/rodata gap) memory: 2024K
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.433342] Freeing unused kernel image (rodata/data gap) memory: 480K
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434012] Run /init as init process
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434269]   with arguments:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434438]     /init
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434537]   with environment:
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434669]     HOME=/
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434765]     TERM=linux
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.434856]     WSL_ROOT_INIT=1
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.863027] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.866868] hv_pci e55c6993-6b12-4442-9958-bfeec2d3b777: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.869080] hv_pci e55c6993-6b12-4442-9958-bfeec2d3b777: PCI host bridge to bus 6b12:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.869874] pci_bus 6b12:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.870814] pci 6b12:00:00.0: [1414:008e] type 00 class 0x030200
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.872554] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.873633] sd 0:0:0:0: Attached scsi generic sg0 type 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.874179] sd 0:0:0:0: [sda] 743696 512-byte logical blocks: (381 MB/363 MiB)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.874925] sd 0:0:0:0: [sda] Write Protect is on
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.875303] sd 0:0:0:0: [sda] Mode Sense: 0f 00 80 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.875322] pci_bus 6b12:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.876259] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.915047] hv_pci 3bc36d52-0c02-464c-9a3f-4e9a459f8996: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.916489] hv_pci 3bc36d52-0c02-464c-9a3f-4e9a459f8996: PCI host bridge to bus 0c02:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.916739] pci_bus 0c02:00: root bus resource [mem 0x9ffe04000-0x9ffe06fff window]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.916975] pci_bus 0c02:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.917877] pci 0c02:00:00.0: [1af4:1049] type 00 class 0x010000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.918758] pci 0c02:00:00.0: reg 0x10: [mem 0x9ffe04000-0x9ffe04fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.919432] pci 0c02:00:00.0: reg 0x18: [mem 0x9ffe05000-0x9ffe05fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.920053] pci 0c02:00:00.0: reg 0x20: [mem 0x9ffe06000-0x9ffe06fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.922867] pci_bus 0c02:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.923201] pci 0c02:00:00.0: BAR 0: assigned [mem 0x9ffe04000-0x9ffe04fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.923906] pci 0c02:00:00.0: BAR 2: assigned [mem 0x9ffe05000-0x9ffe05fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    0.924707] pci 0c02:00:00.0: BAR 4: assigned [mem 0x9ffe06000-0x9ffe06fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.271286] EXT4-fs (sda): mounted filesystem without journal. Opts: (null). Quota mode: none.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.387452] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.466231] hv_pci e72150b6-154f-489e-9abf-33fe43bbd3a8: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.468775] hv_pci e72150b6-154f-489e-9abf-33fe43bbd3a8: PCI host bridge to bus 154f:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.469386] pci_bus 154f:00: root bus resource [mem 0xc00000000-0xe00001fff window]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.469911] pci_bus 154f:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.471191] pci 154f:00:00.0: [1af4:105a] type 00 class 0x088000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.473216] pci 154f:00:00.0: reg 0x10: [mem 0xe00000000-0xe00000fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.475114] pci 154f:00:00.0: reg 0x18: [mem 0xe00001000-0xe00001fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.476987] pci 154f:00:00.0: reg 0x20: [mem 0xc00000000-0xdffffffff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.480828] pci_bus 154f:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.481239] pci 154f:00:00.0: BAR 4: assigned [mem 0xc00000000-0xdffffffff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.483547] pci 154f:00:00.0: BAR 0: assigned [mem 0xe00000000-0xe00000fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.485875] pci 154f:00:00.0: BAR 2: assigned [mem 0xe00001000-0xe00001fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.497691] virtiofs virtio2: Cache len: 0x200000000 @ 0xc00000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.559966] memmap_init_zone_device initialised 2097152 pages in 10ms
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.567734] FS-Cache: Duplicate cookie detected
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.568398] FS-Cache: O-cookie c=00000004 [p=00000002 fl=222 nc=0 na=1]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.569157] FS-Cache: O-cookie d=00000000c9e62a36{9P.session} n=0000000063a1df09
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.569975] FS-Cache: O-key=[10] '34323934393337343436'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.570349] FS-Cache: N-cookie c=00000005 [p=00000002 fl=2 nc=0 na=1]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.570947] FS-Cache: N-cookie d=00000000c9e62a36{9P.session} n=00000000db172728
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.571868] FS-Cache: N-key=[10] '34323934393337343436'
+Feb 27 09:35:45 rgi-arthur-b kernel: [    1.580465] sd 0:0:0:0: [sda] Attached SCSI disk
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.810809] scsi 0:0:0:1: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.813513] sd 0:0:0:1: Attached scsi generic sg1 type 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.815354] scsi 0:0:0:2: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.815595] sd 0:0:0:1: [sdb] 16777224 512-byte logical blocks: (8.59 GB/8.00 GiB)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.818188] sd 0:0:0:2: Attached scsi generic sg2 type 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.818644] sd 0:0:0:1: [sdb] 4096-byte physical blocks
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.819094] sd 0:0:0:1: [sdb] Write Protect is off
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.820985] sd 0:0:0:2: [sdc] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.821634] sd 0:0:0:1: [sdb] Mode Sense: 0f 00 00 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.822779] sd 0:0:0:2: [sdc] 4096-byte physical blocks
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.823903] sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.824326] sd 0:0:0:2: [sdc] Write Protect is off
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.825584] sd 0:0:0:2: [sdc] Mode Sense: 0f 00 00 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.826401] sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.827958] sd 0:0:0:1: [sdb] Attached SCSI disk
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.829528] sd 0:0:0:2: [sdc] Attached SCSI disk
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.850112] EXT4-fs (sdc): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered. Quota mode: none.
+Feb 27 09:35:45 rgi-arthur-b kernel: [    2.869729] Adding 8388608k swap on /dev/sdb.  Priority:-2 extents:1 across:8388608k 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.108785] /sbin/ldconfig: 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.108787] /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.109294] 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.252177] hv_pci 30cea285-6415-4425-ac71-c21ea1c50ca0: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.254213] hv_pci 30cea285-6415-4425-ac71-c21ea1c50ca0: PCI host bridge to bus 6415:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.255010] pci_bus 6415:00: root bus resource [mem 0x9ffe08000-0x9ffe0afff window]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.255408] pci_bus 6415:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.256272] pci 6415:00:00.0: [1af4:1049] type 00 class 0x010000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.257149] pci 6415:00:00.0: reg 0x10: [mem 0x9ffe08000-0x9ffe08fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.257822] pci 6415:00:00.0: reg 0x18: [mem 0x9ffe09000-0x9ffe09fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.258503] pci 6415:00:00.0: reg 0x20: [mem 0x9ffe0a000-0x9ffe0afff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.261535] pci_bus 6415:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.262215] pci 6415:00:00.0: BAR 0: assigned [mem 0x9ffe08000-0x9ffe08fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.263134] pci 6415:00:00.0: BAR 2: assigned [mem 0x9ffe09000-0x9ffe09fff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.263949] pci 6415:00:00.0: BAR 4: assigned [mem 0x9ffe0a000-0x9ffe0afff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.329618] /sbin/ldconfig.real: 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.329622] /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.330146] 
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.355752] hv_pci 3c8e3490-cedd-4eeb-be63-a1eb8751d082: PCI VMBus probing: Using version 0x10003
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.358134] hv_pci 3c8e3490-cedd-4eeb-be63-a1eb8751d082: PCI host bridge to bus cedd:00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.358857] pci_bus cedd:00: root bus resource [mem 0x9ffe0c000-0x9ffe0efff window]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.359524] pci_bus cedd:00: No busn resource found for root bus, will use [bus 00-ff]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.361062] pci cedd:00:00.0: [1af4:1049] type 00 class 0x010000
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.362439] pci cedd:00:00.0: reg 0x10: [mem 0x9ffe0c000-0x9ffe0cfff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.363580] pci cedd:00:00.0: reg 0x18: [mem 0x9ffe0d000-0x9ffe0dfff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.364534] pci cedd:00:00.0: reg 0x20: [mem 0x9ffe0e000-0x9ffe0efff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.368844] pci_bus cedd:00: busn_res: [bus 00-ff] end is updated to 00
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.369281] pci cedd:00:00.0: BAR 0: assigned [mem 0x9ffe0c000-0x9ffe0cfff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.370227] pci cedd:00:00.0: BAR 2: assigned [mem 0x9ffe0d000-0x9ffe0dfff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.371078] pci cedd:00:00.0: BAR 4: assigned [mem 0x9ffe0e000-0x9ffe0efff 64bit]
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.490302] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.490806] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.491156] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.491654] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.492490] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.492841] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.493179] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [    3.493601] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.807492] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.958790] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.959287] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.959692] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.960072] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.960410] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.960682] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.960956] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.961294] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.961753] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    4.962018] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [    5.181332] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Feb 27 09:35:45 rgi-arthur-b kernel: [   49.216337] hv_balloon: Max. dynamic memory size: 32630 MB
+Feb 27 09:35:45 rgi-arthur-b kernel: [245635.841720] hv_utils: TimeSync IC version 4.0
+Feb 27 09:35:45 rgi-arthur-b kernel: [261406.690625] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Feb 27 09:35:45 rgi-arthur-b kernel: [261406.782685] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75
+Feb 27 09:35:45 rgi-arthur-b kernel: [473658.222124] hv_utils: TIMESYNC IC: Stale time stamp, 1794588609900 nsecs old
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.707471] rcu: INFO: rcu_sched detected stalls on CPUs/tasks:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.713465] rcu: 	7-...!: (0 ticks this GP) idle=c16/0/0x0 softirq=405373/405373 fqs=1 
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.716824] rcu: 	12-...!: (0 ticks this GP) idle=ce2/0/0x0 softirq=275056/275056 fqs=1 
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.720418] 	(detected by 3, t=360012 jiffies, g=2163533, q=23)
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.741983] Sending NMI from CPU 3 to CPUs 0:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.750108] NMI backtrace for cpu 0 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.750910] Sending NMI from CPU 3 to CPUs 1:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.753026] NMI backtrace for cpu 1 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.760672] Sending NMI from CPU 3 to CPUs 2:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.763866] NMI backtrace for cpu 2 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.763915] NMI backtrace for cpu 3
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.767753] CPU: 3 PID: 0 Comm: swapper/3 Not tainted 5.15.79.1-microsoft-standard-WSL2 #1
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.768323] Call Trace:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.768685]  <IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.769211]  dump_stack_lvl+0x34/0x48
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.772780]  nmi_cpu_backtrace.cold+0x30/0x70
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.778018]  ? lapic_can_unplug_cpu+0x80/0x80
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.788875]  nmi_trigger_cpumask_backtrace+0xcd/0xd0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.805305]  rcu_dump_cpu_stacks+0xc0/0xf2
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.805678]  rcu_sched_clock_irq.cold+0x44/0x272
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.806568]  update_process_times+0x8c/0xc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.809690]  tick_sched_timer+0x67/0x80
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.810489]  ? tick_sched_do_timer+0x50/0x50
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.810951]  __hrtimer_run_queues+0xf6/0x230
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.811409]  hrtimer_interrupt+0x106/0x220
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.811830]  __sysvec_hyperv_stimer0+0x2b/0x60
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.812797]  sysvec_hyperv_stimer0+0x6d/0x90
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.815643]  </IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.816102]  <TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.816781]  asm_sysvec_hyperv_stimer0+0x16/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.820592] RIP: 0010:default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.823568] Code: 6a 72 27 ff 66 90 fb e9 60 ff ff ff e8 c9 2e ff ff cc cc cc cc cc cc cc cc cc 0f 1f 44 00 00 66 90 0f 00 2d 52 2c 53 00 fb f4 <c3> cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 65
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.827599] RSP: 0018:ffffc900000bbee8 EFLAGS: 00000242
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.828077] RAX: ffffffff81ee5730 RBX: 0000000000000003 RCX: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.828600] RDX: ffff8887df2eb0a0 RSI: ffffc900000bbe78 RDI: 0000000000762868
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.829232] RBP: ffff8881003d0f40 R08: 0000000000000001 R09: ffff888100ef00c0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.829927] R10: 0000000000000189 R11: 0000000000000000 R12: ffff8881003d0f40
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.830858] R13: 0000000000000000 R14: 0000000000000000 R15: ffff8881003d0f40
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.831456]  ? __cpuidle_text_start+0x8/0x8
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.832001]  default_idle_call+0x31/0xc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.832289]  do_idle+0x1e4/0x1f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.859650]  cpu_startup_entry+0x19/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.861563]  secondary_startup_64_no_verify+0xb0/0xbb
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.867957]  </TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.868431] Sending NMI from CPU 3 to CPUs 4:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.873596] NMI backtrace for cpu 4 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.875939] Sending NMI from CPU 3 to CPUs 5:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.877584] NMI backtrace for cpu 5 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.878525] Sending NMI from CPU 3 to CPUs 6:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.892056] NMI backtrace for cpu 6 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.892376] Sending NMI from CPU 3 to CPUs 7:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.910208] NMI backtrace for cpu 7 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.916164] Sending NMI from CPU 3 to CPUs 8:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.920319] NMI backtrace for cpu 8 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.920849] Sending NMI from CPU 3 to CPUs 9:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.927506] NMI backtrace for cpu 9 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.933693] Sending NMI from CPU 3 to CPUs 10:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.934360] NMI backtrace for cpu 10 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.940768] Sending NMI from CPU 3 to CPUs 11:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.941666] NMI backtrace for cpu 11 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.943638] Sending NMI from CPU 3 to CPUs 12:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.944228] NMI backtrace for cpu 12 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.945212] Sending NMI from CPU 3 to CPUs 13:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.956227] NMI backtrace for cpu 13 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.956958] Sending NMI from CPU 3 to CPUs 14:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963525] NMI backtrace for cpu 14
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963530] CPU: 14 PID: 0 Comm: swapper/14 Not tainted 5.15.79.1-microsoft-standard-WSL2 #1
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963533] RIP: 0010:__pv_queued_spin_lock_slowpath+0xe9/0x2b0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963565] Code: 14 41 bd 01 00 00 00 41 be 00 01 00 00 3c 02 0f 94 c0 0f b6 c0 48 89 04 24 c6 43 14 00 ba 00 80 00 00 c6 45 01 01 eb 0b f3 90 <83> ea 01 0f 84 64 01 00 00 0f b6 45 00 84 c0 75 ed 44 89 f0 f0 66
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963567] RSP: 0018:ffffc90000388ed8 EFLAGS: 00000006
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963569] RAX: 0000000000000003 RBX: ffff8887df5aaf00 RCX: 00000000400000f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963570] RDX: 0000000000003fbe RSI: 0000000000000003 RDI: ffffffff82ebffc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963571] RBP: ffffffff82ebffc0 R08: ffff8887ff5f6bc0 R09: 00000000000000a0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963572] R10: 0000000000000000 R11: 0000000000000001 R12: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963573] R13: 0000000000000001 R14: 0000000000000100 R15: 00000000003c0000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963574] FS:  0000000000000000(0000) GS:ffff8887df580000(0000) knlGS:0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963577] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963578] CR2: 00007f6f875cc52d CR3: 000000010836e004 CR4: 00000000003706a0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963579] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963580] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963581] Call Trace:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963624]  <IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963627]  _raw_spin_lock_irqsave+0x29/0x40
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963633]  rcu_core+0x93/0x5f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963670]  __do_softirq+0xd3/0x287
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963725]  irq_exit_rcu+0x72/0x90
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963796]  sysvec_hyperv_stimer0+0x72/0x90
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963801]  </IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963802]  <TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963803]  asm_sysvec_hyperv_stimer0+0x16/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963806] RIP: 0010:default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963809] Code: 6a 72 27 ff 66 90 fb e9 60 ff ff ff e8 c9 2e ff ff cc cc cc cc cc cc cc cc cc 0f 1f 44 00 00 66 90 0f 00 2d 52 2c 53 00 fb f4 <c3> cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 65
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963810] RSP: 0018:ffffc90000113ee8 EFLAGS: 00000242
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963818] RAX: ffffffff81ee5730 RBX: 000000000000000e RCX: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963819] RDX: ffff8887df5ab0a0 RSI: ffffc90000113e78 RDI: 0000000000a0cca2
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963820] RBP: ffff888100803d00 R08: 0000000000000001 R09: 0000000000000006
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963821] R10: 00000000000003fd R11: 0000000000d915aa R12: ffff888100803d00
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963821] R13: 0000000000000000 R14: 0000000000000000 R15: ffff888100803d00
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963823]  ? __cpuidle_text_start+0x8/0x8
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963826]  default_idle_call+0x31/0xc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963828]  do_idle+0x1e4/0x1f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963831]  cpu_startup_entry+0x19/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963833]  secondary_startup_64_no_verify+0xb0/0xbb
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.963836]  </TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [500658.973924] Sending NMI from CPU 3 to CPUs 15:
+Feb 27 09:35:45 rgi-arthur-b kernel: [500659.397435] NMI backtrace for cpu 15 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.019332] rcu: INFO: rcu_sched detected stalls on CPUs/tasks:
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.022387] rcu: 	0-....: (0 ticks this GP) idle=a40/0/0x0 softirq=111767/111767 fqs=2 
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.036112] 	(detected by 3, t=359939 jiffies, g=2163897, q=87)
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.037108] Sending NMI from CPU 3 to CPUs 0:
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043891] NMI backtrace for cpu 0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043897] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 5.15.79.1-microsoft-standard-WSL2 #1
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043901] RIP: 0010:__pv_queued_spin_lock_slowpath+0x1c0/0x2b0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043908] Code: 49 81 c4 00 af 02 00 4c 03 24 c5 80 d8 74 82 49 89 1c 24 b8 00 80 00 00 eb 15 84 c0 75 0a 41 0f b6 54 24 14 84 d2 75 48 f3 90 <83> e8 01 74 41 8b 53 08 85 d2 74 e4 8b 43 08 85 c0 75 09 f3 90 8b
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043911] RSP: 0018:ffffc90000003ed8 EFLAGS: 00000086
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043913] RAX: 000000000000699f RBX: ffff8887df22af00 RCX: 0000000000000001
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043915] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043916] RBP: ffffffff82ebffc0 R08: 0000000000000000 R09: 0000000000000100
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043918] R10: ffff888100b5ae90 R11: ffff8887df22a2b0 R12: ffff8887df32af00
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043919] R13: ffff8887df22af14 R14: 0000000000000001 R15: 0000000000040000
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043921] FS:  0000000000000000(0000) GS:ffff8887df200000(0000) knlGS:0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043923] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043925] CR2: 0000560229c6c660 CR3: 000000010004a005 CR4: 00000000003706b0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043926] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043927] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043928] Call Trace:
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043930]  <IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043933]  _raw_spin_lock_irqsave+0x29/0x40
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043939]  rcu_core+0x93/0x5f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043943]  ? ktime_get+0x35/0xa0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043945]  __do_softirq+0xd3/0x287
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043948]  irq_exit_rcu+0x72/0x90
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043952]  sysvec_hyperv_stimer0+0x72/0x90
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043956]  </IRQ>
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043956]  <TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043957]  asm_sysvec_hyperv_stimer0+0x16/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043961] RIP: 0010:default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043964] Code: 6a 72 27 ff 66 90 fb e9 60 ff ff ff e8 c9 2e ff ff cc cc cc cc cc cc cc cc cc 0f 1f 44 00 00 66 90 0f 00 2d 52 2c 53 00 fb f4 <c3> cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 65
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043965] RSP: 0018:ffffffff82e03ea0 EFLAGS: 00000246
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043967] RAX: ffffffff81ee5730 RBX: 0000000000000000 RCX: 0000000000000000
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043968] RDX: ffff8887df22b0a0 RSI: 0000000000000086 RDI: 000000000012fa44
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043969] RBP: ffffffff82e13940 R08: 0000000000000000 R09: 00000000df21d500
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043970] R10: 0001de44590e8ea4 R11: 00000344e1426436 R12: ffffffff82e13940
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043971] R13: 0000000000000000 R14: 0000000000000000 R15: ffffffff82e13940
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043973]  ? __cpuidle_text_start+0x8/0x8
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043976]  default_idle_call+0x31/0xc0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043979]  do_idle+0x1e4/0x1f0
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043983]  cpu_startup_entry+0x19/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.043985]  start_kernel+0x680/0x6a9
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.044376]  secondary_startup_64_no_verify+0xb0/0xbb
+Feb 27 09:35:45 rgi-arthur-b kernel: [525858.044382]  </TASK>
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.960857] rcu: INFO: rcu_sched detected stalls on CPUs/tasks:
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.961621] rcu: 	0-...!: (0 ticks this GP) idle=a74/0/0x0 softirq=111772/111772 fqs=1 
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.962287] rcu: 	4-...!: (0 ticks this GP) idle=a0a/0/0x0 softirq=144328/144328 fqs=1 
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.962948] 	(detected by 3, t=53034 jiffies, g=2163921, q=19)
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.963481] Sending NMI from CPU 3 to CPUs 0:
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.965611] NMI backtrace for cpu 0 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.967852] Sending NMI from CPU 3 to CPUs 4:
+Feb 27 09:35:45 rgi-arthur-b kernel: [533588.981096] NMI backtrace for cpu 4 skipped: idling at default_idle+0x10/0x20
+Feb 27 09:35:46 rgi-arthur-b rsyslogd: rsyslogd's groupid changed to 110
+Feb 27 09:35:46 rgi-arthur-b rsyslogd: rsyslogd's userid changed to 104
+Feb 27 09:35:46 rgi-arthur-b rsyslogd: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1117" x-info="https://www.rsyslog.com"] start
